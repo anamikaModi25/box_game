@@ -1,6 +1,8 @@
 export default interface PlayerState {
     position: number [];
-    direction: string
+    direction: string;
+    playerTwoPosition: number[];
+    playerTwoDirection: string;
  }
  
  export interface Player {
@@ -11,7 +13,9 @@ export default interface PlayerState {
 
  export function defaultPlayerState(): PlayerState {
     return {
-    position: [0,0],
-    direction: ""
+    position: [140, 140],
+    direction: "",
+    playerTwoPosition: [40, 40],
+    playerTwoDirection: ""
     }
  }

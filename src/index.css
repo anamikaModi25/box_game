@@ -1,20 +1,35 @@
 #route-container {
-  width: 800px;
-  height: 400px;
-  background: green;
+  width: 600px;
+  height: 600px;
+  background: #f3aea3;
   margin-left: 10px auto;
 }
 #world-container {
   position: relative;
-  width: 800px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin: 20px auto;                 
 }
 #player-container {
   position: absolute;
-  background-image: url('./features/Design/player_walk.png');
-  width: 40px;
-  height: 40px;
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  transition: background-color 1s ease-in;
+}
+#player-container-2 {
+  position: absolute;
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  transition: background-color 1s ease-in;
+}
+#player-inactive{
+  position: absolute;
+  background-color: #4c4c4c;
+  width: 100px;
+  height: 100px;
+  transition: background-color 1s ease-in;
 }
 .tile {
   display: inline-flex;
